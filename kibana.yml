@@ -1,0 +1,36 @@
+ 
+# Kibana server configuration
+server.port: 5601
+server.host: "0.0.0.0"
+
+# Elasticsearch connection settings
+elasticsearch.hosts: ["http://elasticsearch:9200"]
+
+# Set the encryption key for Encrypted Saved Objects
+xpack.encryptedSavedObjects.encryptionKey: "your-32-character-long-encryption-key"
+
+# Optional: Enable monitoring
+# xpack.monitoring.ui.container.elasticsearch.enabled: true
+
+# Optional: Configure logging
+logging:
+  dest: stdout
+#  level: info
+
+# Optional: Configure Kibana index
+# kibana.index: ".kibana"
+
+# Optional: Configure default application
+# kibana.defaultAppId: "home"
+
+# Optional: Configure locale
+# i18n.locale: "en"
+
+# Optional: Configure security settings
+# xpack.security.enabled: true
+
+# Optional: Configure reporting settings
+# xpack.reporting.encryptionKey: "another-32-character-long-encryption-key"
+
+# Optional: Configure telemetry settings
+# telemetry.enabled: false
